@@ -1,0 +1,52 @@
+.header {
+    width: 100%;
+    background: url(../img/images.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    &__container {
+        width: 100%;
+        background: rgba($header__back, .90);
+        min-height: 80vh;
+        @include hajm(planshed) {
+            min-height: 75vh;
+        }
+    }
+    &__box {
+        text-align: center;
+        color: white;
+        position: absolute;
+        width: 50%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        @include hajm(phone) {
+            width: 60%;
+        }
+    }
+    &__img {
+        width: 25rem;
+    }
+    &__h1 {
+        line-height: 1.3;
+        margin-bottom: 4rem;
+    }
+    &__p {
+        letter-spacing: 0px;
+        font-weight: 500;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        @include hajm(planshed) {
+            font-size: 1.7rem;
+        }
+        @include hajm(phone) {
+            font-size: 1.9rem;
+        }
+    }
+    &__img-1 {
+        width: 8rem;
+    }
+}

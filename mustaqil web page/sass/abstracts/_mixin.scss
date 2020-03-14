@@ -1,0 +1,43 @@
+@mixin text-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin tozala {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// phone max 600; 
+// tab-port max 900;
+//desktop max 1200 ;
+//big-desktop min 1800;
+@mixin hajm($teng) {
+    //1em -> 16px
+    @if($teng==phone) {
+        @media only screen and (max-width: 37.5em) {
+            @content;
+        }
+        // 600/16 -> 37.5em
+    }
+    @if($teng==tab-port) {
+        @media only screen and (max-width: 56.25em) {
+            @content;
+        }
+    }
+    @if($teng==desktop) {
+        @media only screen and (max-width: 75em) {
+            @content;
+        }
+    }
+    @if($teng==big-desktop) {
+        @media only screen and (min-width: 112.5em) {
+            @content;
+        }
+    }
+}

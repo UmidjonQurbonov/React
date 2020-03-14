@@ -1,0 +1,44 @@
+@mixin tozala {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+//phone max-width:600px;
+//tab-port max-with:900px;
+//desktop max-width:1200px;
+//big-desktop min-width:1800px;
+@mixin hajm($teng) {
+    @if($teng==phone) {
+        @media only screen and (max-width: 37.5em) {
+            @content;
+        }
+    }
+    @if($teng==min-planshed) {
+        @media only screen and( max-width: 46.75em) {
+            @content;
+        }
+    }
+    @if($teng==planshed) {
+        @media only screen and( max-width: 50em) {
+            @content;
+        }
+    }
+    @if($teng==tab-port) {
+        @media only screen and (max-width: 56.25em) {
+            @content;
+        }
+    }
+    @if($teng==desktop) {
+        @media only screen and (max-width: 75em) {
+            @content;
+        }
+    }
+    @if($teng==big-desktop) {
+        @media only screen and (min-width: 112.5em) {
+            @content;
+        }
+    }
+}

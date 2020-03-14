@@ -1,0 +1,11 @@
+.u-padding-button-1{padding:1.5rem 4.5rem !important;}
+
+.u-padding-button-popup{padding:1.3rem 4.5rem !important};
+
+#header-margin-bottom{margin-bottom:4rem !important};
+.header__text{margin-bottom:8rem !important;
+@include hajm(tab-port){
+    margin-bottom:4rem !important;}}
+.text__nature-h3{margin-bottom:1.5rem !important};
+
+.u-width{width:calc((100% - 17rem)/2) !important};

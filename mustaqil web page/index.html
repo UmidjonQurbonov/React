@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
+    <link rel="stylesheet" href="css/_style.min.css">
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="img/png">
+    <link rel="stylesheet" href="./WOW-master/css/libs/animate.css">
+    <script src="./WOW-master/dist/wow.min.js"></script>
+    <script>
+        new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: true, // default
+            live: true
+        }).init();
+    </script>
+    <title>Independent work</title>
+
+    <style>
+        #loading {
+            width: 100%;
+            height: 100%;
+            background: white;
+            z-index: 3000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            font-size: 50px;
+        }
+        
+        #foiz {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -100%);
+        }
+        
+        #yur {
+            background: red;
+            position: absolute;
+            top: 50%;
+            transform: translate(0%, -0%);
+            width: 0;
+            height: 10px;
+        }
+    </style>
+</head>
+
+<body onload="f1()">
+
+    <!-- NAVIGATION -->
+    <div class="navigation">
+        <input type="checkbox" id="nav-ch" class="navigation-ch">
+        <label for="nav-ch" class="navigation-l">
+        <span class="navigation-l-s">&nbsp;</span>
+    </label>
+        <div class="navigation-back"></div>
+        <nav class="navigation-text-box">
+            <ul>
+                <li><a href="#header" class="navigation-a"><span class="navigation-span">01</span>about natous</a></li>
+                <li><a href="#s-2" class="navigation-a"><span class="navigation-span">02</span>your benfits</a></li>
+                <li><a href="#s-3" class="navigation-a"><span class="navigation-span">03</span>popular tours</a></li>
+                <li><a href="#s-4" class="navigation-a"><span class="navigation-span">04</span>stories</a></li>
+                <li><a href="#s-5" class="navigation-a"><span class="navigation-span">05</span>book now</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- HEADER PART -->
+    <header class="header" id="header">
+        <div class="header__img">
+            <img src="img/logo-white.png" alt="NOT FIND" class="header__img-logo">
+        </div>
+        <div class="header__text-box">
+            <h1 class="header__h1 ">
+                <span class="header__left">outdoors</span>
+                <span class="header__right">is where life happens</span>
+            </h1>
+            <!-- Button---1 -->
+            <a href="#" class="header__a button-1 u-padding-button-1">discover our tours</a>
+        </div>
+    </header>
+
+
+    <!-- MAIN PART -->
+    <main>
+        <!-- SECTION-1 -->
+        <div class="section-1" id="sec-1">
+            <div class="header__text">
+                <h2 class="header__text-h2">
+                    exciting tours for adventurous people
+                </h2>
+            </div>
+            <div class="section-box">
+                <div class="row">
+                    <div class="col-2-of-1 wow rotateInDownLeft">
+                        <h3 class="text__nature-h3">you're going to fall in love with nature</h3>
+                        <p class="text__nature-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.</p>
+                        <h3 class="text__nature-h3">live adventures like you never have before</h3>
+                        <p class="text__nature-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla deserunt voluptatum nam.</p>
+                        <a href="#" class="button-2">Learn more &rarr;</a>
+                    </div>
+                    <div class="col-2-of-1 wow rotateInDownRight">
+                        <div class="img-box">
+                            <img src="img/nat-1.jpg" alt="NOT FOND" class="section__1-img nat-1">
+                            <img src="img/nat-2.jpg" alt="NOT FOND" class="section__1-img nat-2">
+                            <img src="img/nat-3.jpg" alt="NOT FOND" class="section__1-img nat-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION-2 -->
+        <section class="section-2" id="s-2">
+            <div class="row">
+                <div class="col-4-of-1 wow fadeInDown">
+                    <div class="section-2-box ">
+                        <i class="icon-basic-world section-2-box-i">&nbsp;</i>
+                        <h3 class="section-2-box-h3">explore the world</h3>
+                        <p class="section-2-box-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.</p>
+                    </div>
+                </div>
+                <div class="col-4-of-1">
+                    <div class="section-2-box wow fadeInLeft">
+                        <i class="icon-basic-compass section-2-box-i">&nbsp;</i>
+                        <h3 class="section-2-box-h3">meet nature</h3>
+                        <p class="section-2-box-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.</p>
+                    </div>
+                </div>
+                <div class="col-4-of-1">
+                    <div class="section-2-box wow fadeInRight">
+                        <i class="icon-basic-map section-2-box-i">&nbsp;</i>
+                        <h3 class="section-2-box-h3">find you way</h3>
+                        <p class="section-2-box-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.</p>
+                    </div>
+                </div>
+                <div class="col-4-of-1">
+                    <div class="section-2-box wow fadeInUp">
+                        <i class="icon-basic-heart section-2-box-i">&nbsp;</i>
+                        <h3 class="section-2-box-h3">live a healthier life</h3>
+                        <p class="section-2-box-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION-3 -->
+        <section class="section-3" id="s-3">
+            <div class="header__text">
+                <h2 class="header__text-h2">
+                    most popular tours
+                </h2>
+            </div>
+            <div class="row">
+
+                <div class="col-3-of-1 wow rotateIn">
+                    <div class="box-3">
+                        <div class="box-3-front box-3-box">
+                            <div class="box-3-front-img box-3-front-img-1">&nbsp;</div>
+                            <h4 class="box-3-front-h4">
+                                <span class="box-3-front-span box-3-front-span-1">the sea explorer</span>
+                            </h4>
+                            <div class="details">
+                                <ul class="details-ul">
+                                    <li>3 day tours</li>
+                                    <li>Up to 30 people</li>
+                                    <li>2 tour guides</li>
+                                    <li>Sleep in cozy hotels</li>
+                                    <li>Difficulty:easy</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box-3-back box-3-back-1 box-3-box">
+                            <div class="back-box">
+                                <h4 class="back-h4">only</h4>
+                                <p class="back-p">$297</p>
+                                <a href="#popup" class="back-a button-1">Book Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3-of-1 wow rotateInDownLeft">
+                    <div class="box-3">
+                        <div class="box-3-front box-3-box">
+                            <div class="box-3-front-img box-3-front-img-2">&nbsp;</div>
+                            <h4 class="box-3-front-h4">
+                                <span class="box-3-front-span box-3-front-span-2">the sea explorer</span>
+                            </h4>
+                            <div class="details">
+                                <ul class="details-ul">
+                                    <li>4 day tours</li>
+                                    <li>Up to 15 people</li>
+                                    <li>6 tour guides</li>
+                                    <li>Sleep in provided tours</li>
+                                    <li>Difficulty:medium</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box-3-back box-3-back-2 box-3-box">
+                            <div class="back-box">
+                                <h4 class="back-h4">only</h4>
+                                <p class="back-p">$497</p>
+                                <a href="#popup" class="back-a button-1">Book Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3-of-1 wow rollIn">
+                    <div class="box-3">
+                        <div class="box-3-front box-3-box">
+                            <div class="box-3-front-img box-3-front-img-3">&nbsp;</div>
+                            <h4 class="box-3-front-h4">
+                                <span class="box-3-front-span box-3-front-span-3">the snow adventures</span>
+                            </h4>
+                            <div class="details">
+                                <ul class="details-ul">
+                                    <li>5 day tours</li>
+                                    <li>Up to 40 people</li>
+                                    <li>3 tour guides</li>
+                                    <li>Sleep in provided tens</li>
+                                    <li>Difficulty:hard</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box-3-back box-3-back-3 box-3-box">
+                            <div class="back-box">
+                                <h4 class="back-h4">only</h4>
+                                <p class="back-p">$897</p>
+                                <a href="#popup" class="back-a button-1">Book Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-a">
+                <a href="#" class="section-3-a button-1 u-padding-button-1">discover all tours</a>
+            </div>
+        </section>
+
+        <!-- SECTION-4 -->
+        <section class="section-4" id="s-4">
+            <div class="bg-video">
+                <video class="bg-video-content" autoplay loop muted>
+                <source src="img/video.mp4" type="video/mp4">
+                <source src="img/video.webm" type="video/webm">
+            </video>
+            </div>
+            <div class="header__text">
+                <h2 class="header__text-h2">
+                    we make people geniunely happy
+                </h2>
+            </div>
+            <div class="row wow rotateInDownLeft">
+                <div class="section-4-box">
+                    <figure class="figure_a">
+                        <img src="img/nat-8.jpg" class="figure-img" alt="NOT FIND">
+                        <span class="figure-in-text">mary smith</span>
+                    </figure>
+                    <div class="figure-text">
+                        <h3 class="figure-h3">i had the best week ever with my family</h3>
+                        <p class="figure-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis
+                            consequatur ducimus quam nisi exercitationem omnis earum qui.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row wow rotateInDownRight">
+                <div class="section-4-box">
+                    <figure class="figure_a">
+                        <img src="img/nat-9.jpg" class="figure-img" alt="NOT FIND">
+                        <span class="figure-in-text">jack wilson</span>
+                    </figure>
+                    <div class="figure-text">
+                        <h3 class="figure-h3">wow! my life is completely different now</h3>
+                        <p class="figure-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis
+                            consequatur ducimus quam nisi exercitationem omnis earum qui.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:4rem;">
+                <a href="#" class="button-2">Read all stories &rarr;</a>
+            </div>
+        </section>
+
+        <!-- SECTION-5 -->
+        <section class="section-5 wow rollIn" id="s-5">
+            <div class="row">
+
+                <div class="forma">
+
+                    <div class="forma-box">
+                        <form action="#" class="forma-form">
+                            <div class="header__text" id="header-margin-bottom">
+                                <h2 class="header__text-h2">
+                                    start booking now
+                                </h2>
+                            </div>
+                            <div class="forma-input">
+                                <input type="text" id="i-1" class="forma-input-i" placeholder="Full name" required>
+                                <label for="i-1" class="forma-input-label">Full name</label>
+                            </div>
+
+                            <div class="forma-input">
+                                <input type="email" id="e-mail" class="forma-input-i" placeholder="E-mail" required>
+                                <label for="e-mail" class="forma-input-label">E-mail</label>
+                            </div>
+
+                            <div class="forma-input">
+                                <div class="forma-input-r">
+                                    <input type="radio" class="forma-input-r-i" id="ch-1" name="name">
+                                    <label for="ch-1" class="forma-input-r-l">
+                                <span class="forma-input-span"></span>
+                                Small tour groug
+                            </label>
+                                </div>
+                                <div class="forma-input-r">
+                                    <input type="radio" class="forma-input-r-i" id="ch-2" name="name">
+                                    <label for="ch-2" class="forma-input-r-l">
+                                <span class="forma-input-span"></span>
+                                Large tour group
+                            </label>
+                                </div>
+                            </div>
+
+                            <div class="forma-input" style="margin-top:4rem;">
+                                <a href="#" class="section-3-a button-1 u-padding-button-1">next step &rarr;</a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer wow bounceInUp">
+        <div class="footer-box">
+            <span class="footer-box-img">
+            <img src="img/logo-green-1x.png" alt="NOT FIND">    
+        </span>
+        </div>
+
+        <div class="row">
+            <div class="col-2-of-1 u-width">
+                <div class="footer-text-box">
+                    <ul class="footer-ul">
+                        <li class="footer-li">company</li>
+                        <li class="footer-li">contact us</li>
+                        <li class="footer-li">carrers</li>
+                        <li class="footer-li">privacy policy</li>
+                        <li class="footer-li">terms</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-2-of-1 u-width" style="margin-left:17rem;">
+                <p class="footer-text-box">
+                    Built by <span class="footer-li" style="margin-left:0;">JONAS SCHMEDTMANN</span> for his online course <span class="footer-li" style="margin-left:0;">ADVANCED CSS AND SASS</span>. Copyright © by Jonas Schmedtmann. You are 100% allowed
+                    to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas Schmedtmann, is of course highly appreciated!
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- POPUP -->
+    <div class="popup" id="popup">
+        <div class="popup-box">
+            <div class="popup-left">
+                <div class="popup-img-box">
+                    <img src="img/nat-8.jpg" alt="NOT FIND" class="popup-img">
+                    <img src="img/nat-9.jpg" alt="NOT FIND" class="popup-img">
+                </div>
+            </div>
+            <div class="popup-right">
+                <h2 class="header__text-h2">
+                    start booking now
+                </h2>
+                <h3 class="popup-h3">
+                    important - please read these terms before booking
+                </h3>
+                <p class="popup-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit amet massa vitae. Mi bibendum
+                    neque egestas congue. Placerat orci nulla pellentesque dignissim enim sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Proin fermentum leo
+                    vel orci porta non pulvinar neque laoreet. Gravida neque convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit.
+                    Amet massa vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed euismod nisi porta
+                </p>
+
+                <a href="#" class="section-3-a button-1 u-padding-button-popup">book now</a>
+                <a href="#" class="popup-close">&times;</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="loading">
+        <p id="foiz">0%</p>
+        <p id="yur"></p>
+    </div>
+
+    <script>
+        function f1() {
+            var a = document.getElementById("loading");
+            var b = document.getElementById("foiz");
+            var c = document.getElementById("yur");
+            var d;
+            var t;
+            d = setTimeout("f1()", 100);
+            t = parseInt(b.innerHTML);
+            if (t < 100) {
+                t += 5;
+                b.innerHTML = t + "%";
+                c.style.width = t + "%";
+
+
+            } else {
+                a.style.display = "none";
+                clearTimeout(d);
+                Math.break;
+
+            }
+
+
+
+
+        }
+    </script>
+    <!--<div class="row">
+        <div class="col-2-of-1">col-2-of-1</div>
+        <div class="col-2-of-1">col-2-of-1</div>
+    </div>
+    
+    <div class="row">
+        <div class="col-3-of-1">col-3-of-1</div>
+        <div class="col-3-of-1">col-3-of-1</div>
+        <div class="col-3-of-1">col-3-of-1</div>
+    </div>
+
+    <div class="row">
+        <div class="col-4-of-1">col-4-of-1</div>
+        <div class="col-4-of-1">col-4-of-1</div>
+        <div class="col-4-of-1">col-4-of-1</div>
+        <div class="col-4-of-1">col-4-of-1</div>
+    </div> -->
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 100;
+    box-shadow: 0px 1rem 1.5rem rgba(black, 0.1);
+    position: fixed;
+    width: 100%;
+    background-color: $nav__back;
+    height: 5rem;
+    &__img {
+        max-height: 5rem;
+    }
+    &__ul {
+        font-weight: 600;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        line-height: 5rem;
+        @include hajm(min-planshed) {
+            display: none;
+            position: absolute;
+            background-color: $nav__back;
+            width: 50%;
+            top: 5rem;
+            right: 4rem;
+            font-size: 1.5rem;
+        }
+    }
+    &__a-1 {
+        text-decoration: none;
+        padding: 0 1.5rem;
+        display: block;
+        color: white;
+        @include hajm(min-planshed) {
+            text-align: left;
+        }
+        &:hover {
+            background: $header__back;
+        }
+        @include hajm(desktop) {
+            padding: 0 1rem;
+        }
+    }
+    &__span {
+        display: inline-block;
+        margin-left: .5rem;
+        width: 0;
+        height: 0;
+        border-top: .4rem solid white;
+        border-left: .4rem solid transparent;
+        border-right: .4rem solid transparent;
+        border-bottom: .4rem solid transparent;
+        vertical-align: middle;
+    }
+    &__ul-2 {
+        list-style: none;
+        margin: 0;
+        padding: .5rem 0;
+        background-color: $nav__back;
+        box-shadow: 0px 1rem 1.5rem rgba(black, 0.2);
+        z-index: 200;
+        display: none;
+    }
+    &__a-2 {
+        color: white;
+        text-decoration: none;
+        display: block;
+        line-height: 2;
+        padding: 2px 2rem;
+        &:hover {
+            background: white;
+            color: rgba(black, 0.7);
+        }
+        @include hajm(min-planshed) {
+            text-align: center;
+        }
+    }
+    &__a-2>.fa {
+        margin-left: .5rem;
+    }
+    .box {
+        background: black;
+        width: 6rem;
+        height: 5rem;
+        position: relative;
+        text-align: center;
+        display: none;
+        margin-right: 2rem;
+        border-radius: 2px;
+        &_span {
+            height: 2px;
+            width: 4rem;
+            background: red;
+            display: inline-block;
+            margin-top: 2.3rem;
+            position: relative;
+            &::after,
+            &::before {
+                content: "";
+                height: 2px;
+                width: 4rem;
+                background: red;
+                position: absolute;
+                left: 0;
+                transition: all .2s;
+            }
+            &::after {
+                top: -6px;
+            }
+            &::before {
+                top: 6px;
+            }
+        }
+        &:hover .box_span {
+            &::after {
+                top: -8px;
+            }
+            &::before {
+                top: 8px;
+            }
+        }
+        @include hajm(min-planshed) {
+            display: block;
+        }
+    }
+}

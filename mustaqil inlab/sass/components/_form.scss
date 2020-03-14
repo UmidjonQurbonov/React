@@ -1,0 +1,93 @@
+.forma {
+    max-height: 5rem;
+    width: 32rem;
+    position: fixed;
+    bottom: 0;
+    right: 2rem;
+    z-index: 4000;
+    background: white;
+    box-shadow: 0 0 2rem rgba(black, .5);
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 5px;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    &__p-1 {
+        background: $nav__back-1;
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 1rem 0;
+        padding-left: 2rem;
+        color: white;
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 5px;
+        cursor: pointer;
+    }
+    &__p-2 {
+        font-size: 1.5rem;
+        width: 100%;
+        padding-left: 2rem;
+        line-height: 1.2;
+        margin: 1rem 0;
+        color: rgba(black, .6);
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    @include tozala;
+    font-size: 1.7rem;
+    &__input {
+        padding: 8px;
+        margin-bottom: 1rem;
+        background: white;
+        outline: none;
+        box-shadow: 0;
+        border: 1px solid rgba(black, .2);
+        overflow: .2;
+        &:focus:invalid {
+            border: 1px solid rgba(black, .5);
+        }
+        &:focus {
+            border: 1px solid $nav__back-1;
+        }
+    }
+}
+
+input[type="submit"] {
+    background: $nav__back-1;
+    color: white;
+}
+
+.fa-envelope {
+    color: white;
+    background: $nav__back-1;
+    margin-right: 1rem;
+}
+
+.form__b {
+    width: 100%;
+    background: $nav__back-1;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    &:active {
+        background: $header__back;
+    }
+}
+
+.fa-times-circle {
+    font-size: 2.5rem;
+    cursor: pointer;
+    position: absolute;
+    margin-left: -3rem;
+    background: darken(white, 20%);
+    border-radius: 50%;
+    box-shadow: 0 0 .5rem rgba(black, .5);
+    display: none;
+    &:hover {
+        color: white;
+        background: $header__back;
+    }
+}

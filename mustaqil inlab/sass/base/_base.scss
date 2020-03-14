@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    @include hajm(big-desktop) {
+        font-size: 75%;
+    }
+    @include hajm(desktop) {
+        font-size: 56.25%;
+    }
+    @include hajm(tab-port) {
+        font-size: 50%;
+    }
+    @include hajm(planshed) {
+        font-size: 46%;
+    }
+    @include hajm(phone) {
+        font-size: 43%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.l {
+    width: 40px;
+    height: 40px;
+    background: red;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    z-index: 3000;
+    color: white;
+}

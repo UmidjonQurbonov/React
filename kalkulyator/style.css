@@ -1,0 +1,73 @@
+.content {
+    width: 600px;
+    margin: 100px auto;
+    position: relative;
+    padding: 0;
+}
+
+button {
+    width: 80px;
+}
+
+.row {
+    margin: 0 auto;
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+ol {
+    color: red;
+    font-family: sans-serif;
+    background: mediumaquamarine;
+}
+
+li {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+li:hover {
+    color: mediumblue;
+}
+
+.box {
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+
+#nav {
+    background: black;
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    font-size: 20px;
+    color: red;
+    padding: 0px 10px;
+}
+
+#nav li {
+    list-style: none;
+}
+
+.x,
+.x:link,
+.x:visited {
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    right: 10px;
+    font-size: 30px;
+    color: #777;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.x:active,
+.x:hover {
+    color: red;
+}

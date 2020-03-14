@@ -1,0 +1,87 @@
+.row {
+    width: 100%;
+    @include tozala;
+    &:not(:first-child) {
+        margin-top: 4rem;
+    }
+    @include hajm(min-planshed) {
+        margin-top: 0 !important;
+    }
+}
+
+.col-4-1 {
+    float: left;
+    width: calc((100% - (3*3rem))/4);
+    &:not(:first-child) {
+        margin-left: 3rem;
+    }
+    @include hajm(min-planshed) {
+        float: none;
+        width: 70%;
+        margin: 2rem auto !important;
+        padding: 2rem;
+        &:not(:first-child) {
+            margin-left: 0;
+        }
+    }
+    @include hajm(phone) {
+        width: 90%;
+    }
+}
+
+.col-3-1 {
+    float: left;
+    width: calc((100% - (2*3rem))/3);
+    &:not(:first-child) {
+        margin-left: 3rem;
+    }
+    @include hajm(min-planshed) {
+        float: none;
+        width: 70%;
+        margin: 2rem auto !important;
+        padding: 2rem;
+        &:not(:first-child) {
+            margin-left: 0;
+        }
+    }
+    @include hajm(phone) {
+        width: 90%;
+    }
+}
+
+.col-2-1 {
+    float: left;
+    width: calc((100% - (3rem))/2);
+    &:not(:first-child) {
+        margin-left: 3rem;
+    }
+    @include hajm(min-planshed) {
+        float: none;
+        width: 70%;
+        margin: 2rem auto !important;
+        padding: 2rem;
+        &:not(:first-child) {
+            margin-left: 0;
+        }
+    }
+    @include hajm(phone) {
+        width: 90%;
+    }
+}
+
+.col-3 {
+    width: calc(100%/3);
+    float: left;
+    @include hajm(min-planshed) {
+        float: none;
+        width: 70%;
+        margin: 2rem auto !important;
+        padding: 2rem;
+        &:not(:first-child) {
+            margin-left: 0;
+        }
+    }
+    @include hajm(phone) {
+        width: 90%;
+    }
+}

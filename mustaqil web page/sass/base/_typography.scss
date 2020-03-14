@@ -1,0 +1,14 @@
+.header__a,
+.header__a:link,
+.header__a:visited{
+    color:#777;
+    background:#fff;
+    text-transform:uppercase;
+    font-size:1.3rem;
+    animation:header__button 1s cubic-bezier(0.1, 0.55, 0.265, 1.55) 0s;
+    @include header__b;
+
+    &::after{
+        background:#fff;
+    }
+}

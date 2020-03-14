@@ -1,0 +1,237 @@
+﻿/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    
+}
+
+
+h2 {
+    padding-top:50px;
+    text-transform: uppercase;  
+    padding-bottom:20px;  
+    color:#000;
+}
+h3 {
+    padding-top:30px;
+     padding-bottom:40px;
+     text-align:center;
+     font-weight:900;
+     text-transform:uppercase;
+}
+section {
+    padding-top:30px;
+    padding-bottom:40px;
+}
+.just-pad {
+    padding-bottom:50px;
+    padding-top:80px;
+}
+
+p {
+    padding:10px 0px;
+}
+/*=====================================
+  NAVBAR STYLES 
+    ===================================*/
+
+.logo-custom {
+     max-height:48px;
+}
+#menu {
+   
+    background-color:rgba(75, 183, 119, 0.65);
+    color:#fff;
+    font-size:12px;
+    font-weight:900;
+    letter-spacing:1px;
+    box-shadow: 0px 0px 50px -11px rgba(0,0,0,0.75);
+   
+}
+.navbar-inverse {
+border-color:transparent;
+}
+.navbar-inverse .navbar-nav > li > a,.navbar-inverse .navbar-nav > li > a:hover {
+color: #FFF;
+}
+
+.home-mail {
+    font-size:12px; 
+    font-weight:normal;
+    padding-left:5px;
+}
+/*=====================================
+  HEADERS STYLES 
+    ===================================*/
+
+
+.header-sec {
+  
+    padding-top: 10px;
+    padding-bottom: 60px;
+    background: url(../img/2h.jpg) no-repeat center center;
+padding: 0;
+-webkit-background-size: cover;
+background-size: cover;
+ color:#fff;
+ background-attachment:fixed;
+}
+.header-sec .overlay{
+    background:rgba(8, 134, 74, 0.90);
+    min-height: 500px;
+}
+    .header-sec h2 {
+        color:#fff;
+        padding-top:150px;
+    }
+
+
+
+    /*=====================================
+  TESTIMONIALS STYLES 
+    ===================================*/
+
+
+.testi-sec {
+  
+    padding-top: 10px;
+    padding-bottom: 60px;
+    background: url(../img/4h.jpg) no-repeat center center;
+padding: 0;
+-webkit-background-size: cover;
+background-size: cover;
+ color:#fff;
+ background-attachment:fixed;
+
+}
+.testi-sec .overlay{
+    background:rgba(8, 134, 74, 0.80);
+min-height: 300px;
+}
+    .testi-sec h3 {
+        color:#fff;
+        padding-top:60px;
+        padding-bottom:30px;
+    }
+
+.testi-sec h4 {
+    line-height:35px;
+}
+
+
+/*=====================================
+  PRICING STYLES 
+    ===================================*/
+
+.price-sec {
+  
+    padding-top: 40px;
+    padding-bottom: 60px;
+    color:#000;
+   
+
+}
+    .price-sec span {
+        font-size:90px;
+    }
+
+.single-price {
+    background-color:rgba(8, 134, 74,1);
+    padding:50px;
+}
+.multi-price {
+    background-color:#4bb777;
+    padding:50px;
+}
+  /*=====================================
+  CONTACT STYLES 
+    ===================================*/
+.contact {
+    font-size:20px;
+    line-height:35px;
+}
+ /*=====================================
+  FOOTER STYLES 
+    ===================================*/
+
+ .myfooter {
+    text-align: center;
+    background-color:rgba(75, 183, 119, 0.65);
+    padding:5px 40px 5px 40px;
+    color:#fff;
+    font-size:14px;
+    
+}
+
+.center {
+    margin: auto;
+}
+
+.img-head {
+    max-width: 250px;
+    margin-bottom: 10px;
+    
+}
+
+
+ .dmenu {
+    background-color:rgba(75, 183, 119, 0.65);
+ }
+
+ .dmenu a {
+    color: white !important;
+ }
+
+.dmenu a:hover {
+    color: black !important;
+ }
+
+
+
+@media screen and (min-width: 768px) {
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+    }
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: rgb(56, 137, 89);
+}
+
+.downarrow {
+    color: white !important;
+    text-decoration: none;
+}
+.downarrow img{
+    margin-bottom: 30px;
+}
+
+.downarrow:hover {
+    color: white !important;
+    text-decoration: none;
+}
+.maqsad {
+    padding-bottom: 50px;
+}
+
+@media (max-width: 550px) {
+    .s1 {font-size: 16px;}
+    .s2 {font-size: 14px;}
+    .quot {font-size: 16px;}
+}

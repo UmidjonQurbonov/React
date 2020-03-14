@@ -1,0 +1,36 @@
+*,*::after,*::before{
+    box-sizing:inherit;
+    padding:0;
+    margin:0;
+}
+
+html{
+    font-size:62.5%;  //100% -> 16px -> 1rem,10/16 ->  62.5% -> 10px;
+
+    @include hajm(phone){   
+        font-size:30%;         //1rem 4.8px  
+    }
+    @include hajm(tab-port){
+        font-size:50%;         //1rem 8px
+    }
+    @include hajm(desktop){
+        font-size:56.25%;      //1rem 9px
+    }
+    @include hajm(big-desktop){
+        font-size:75%;          //1rem 12px
+    }
+}
+
+body{
+    box-sizing:border-box;
+    font-family:"Lato" , sans-serif;
+    font-weight:400;
+    padding:3rem;
+    line-height:1.7;
+    color:#777;
+
+    @include hajm(tab-port){
+        padding:0;
+        line-height:1.4;
+    }
+}

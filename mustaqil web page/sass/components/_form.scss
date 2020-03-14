@@ -1,0 +1,155 @@
+.forma{
+    width:100%;
+    background-image:linear-gradient(105deg,rgba(#fff,.9) 50%,rgba(#fff,0) 50%) , url(../img/nat-10.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    margin:0 auto;
+    overflow:hidden;
+    box-shadow:0px 1.5rem 2.5rem rgba($color__black,.2);
+
+    @include hajm(desktop){
+        background-image:linear-gradient(105deg,rgba(#fff,.9) 60%,rgba(#fff,.0) 40%) , url(../img/nat-10.jpg);
+        background-size:110%;
+    }
+
+    @include hajm(tab-port){
+        background-image:linear-gradient(105deg,rgba(#fff,.9) 50%,rgba(#fff,.9) 50%) , url(../img/nat-10.jpg);
+        background-size:280%;
+    }
+     
+    &-box{
+        width:50%;
+        font-size:1.6;
+        padding:6rem;
+        @include tozala;
+        
+        @include hajm(desktop){
+            padding:4rem;
+            width:60%;
+        }
+
+        @include hajm(tab-port){
+            padding:4rem;
+            width:100%;
+        }
+    }
+    
+    
+    &-input{
+        position:relative;
+        width:90%;
+        margin:0 auto;
+        
+        &:not(:last-child){
+            margin-bottom:2rem;
+        }
+
+        &-i{
+            font-size:1.5rem;
+            font-weight:400;
+            width:100%;
+            padding:1.5rem 2rem;
+            font-family:inherit;
+            color:inherit;
+            border:none;
+            border-bottom:3px solid transparent;
+            font-size:1.6rem;
+            border-radius:2px; 
+            background:rgba(#fff,.8);
+            display:block;
+
+            &:focus{
+                outline:none;
+                box-shadow:0 1.5rem 2rem rgba(#000,.1);
+                border-bottom:3px solid $color__button-2;
+            }
+
+            &:focus:invalid{
+                border-bottom:3px solid $color__nat-5-d;
+            }
+            
+        }
+        
+        &-label{
+            font-size:1.2rem;
+            font-weight:700;
+            display:block;
+            margin-left:2rem;
+            margin-top:.7rem;
+            transition:all .2s;
+        }
+
+        &-i:placeholder-shown ~ &-label{
+            opacity:0;
+            visibility:hidden;
+            transform:translateY(-4rem);  
+        }
+    
+    
+
+        &-r{
+            display:inline-block;
+            width:49%;
+            position:relative;
+
+            @include hajm(tab-port){
+                display:block;
+                width:100%;
+                
+                &:not(:first-child){
+                    margin-top:2rem;
+                }
+            }
+
+        &-i{
+            display:none;
+        }
+
+        &-l{
+            cursor:pointer;
+            position:relative;
+            font-size:1.6rem;
+            font-weight:500;
+            display:inline-block;
+            padding-left:4rem;
+        }
+    }
+
+        &-span{
+            display:inline-block;
+            border-radius:50%;
+            width:3rem;
+            height:3rem;
+            position:absolute;
+            left:0;
+            top:0;
+            border:.5rem solid $color__button-2;
+            
+            &::after{
+                content:"";
+                width:1.2rem;
+                height:1.2rem;
+                position:absolute;
+                border-radius:50%;
+                @include text-center;
+                background:transparent;
+            }
+
+            @include hajm(tab-port){
+                width:2.5rem;
+                height:2.5rem;
+                
+                &::after{
+                    width:1rem;
+                    height:1rem;
+                    @include text-center;
+                }
+            }
+        }
+    
+    .forma-input-r-i:checked + .forma-input-r-l .forma-input-span::after{
+        background:$color__button-2;
+    }
+
+}
+}

@@ -1,0 +1,20 @@
+@mixin header__anim{
+    @keyframes left__anim{
+        0%{transform:translateX(-15rem);opacity:0;}
+        100%{transform:translateX(0);opacity:1;}
+    }
+}
+
+@mixin header__anim2{
+    @keyframes right__anim{
+        0%{transform:translateX(15rem);opacity:0;}
+        100%{transform:translateX(0px);opacity:1;}
+    }
+}
+
+@mixin header__b{
+    @keyframes header__button{
+        0%{transform:translateY(8rem);opacity:0;}
+        100%{transform:translateY(0px);opacity:1;}
+    }
+}

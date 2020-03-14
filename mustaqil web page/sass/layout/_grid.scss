@@ -1,0 +1,38 @@
+.row {
+    max-width: $grid__width;
+    margin: 0 auto !important;
+    @include tozala;
+    &:not(:last-child) {
+        margin: 2rem 0;
+    }
+    @include hajm(phone) {
+        margin: 0;
+    }
+    @include hajm(tab-port) {
+        width: $grid__width-min;
+        margin: 0 auto;
+        padding: 0 6rem;
+    }
+    [class^="col-"] {
+        float: left;
+        &:not(:first-child) {
+            margin-left: 6rem;
+        }
+        @include hajm(tab-port) {
+            width: 100% !important;
+            &:not(:first-child) {
+                margin-left: 0 !important;
+                margin-top: 6rem;
+            }
+        }
+    }
+    .col-2-of-1 {
+        width: calc((100% - 6rem)/2);
+    }
+    .col-3-of-1 {
+        width: calc((100% - 2*6rem)/3);
+    }
+    .col-4-of-1 {
+        width: calc((100% - 3*6rem)/4);
+    }
+}

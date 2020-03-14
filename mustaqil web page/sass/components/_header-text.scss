@@ -1,0 +1,35 @@
+.header__text{
+    text-align:center;
+    
+    &-h2{
+        background-image:linear-gradient(to right bottom,$color__header-1,$color__header-2);
+        display:inline-block;
+        text-transform:uppercase;
+        font-size:3.5rem;
+        letter-spacing:.2rem;
+        -webkit-background-clip:text;
+        background-clip:text;
+        color:transparent;
+        transition:all .2s;
+        backface-visibility: hidden;
+        z-index:2;
+         
+        &:hover{
+            transform:skew(10deg,2deg) scale(1.1);
+            z-index:500;
+            text-shadow:.5rem 1rem 2rem rgba($color__black, .2);
+            
+        }
+
+        @include hajm(tab-port){
+            font-size:2.7rem;
+            letter-spacing:.1rem;
+        }
+
+        
+        @include hajm(phone){
+            font-size:2.4rem;
+            letter-spacing:.05rem;
+        }
+    }
+}

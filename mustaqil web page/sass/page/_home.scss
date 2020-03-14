@@ -1,0 +1,540 @@
+
+        // section-1
+.section-1{
+    width:100%;
+    background:$section__color;
+    padding:25rem 0rem 20rem 0rem;
+    margin-top:-20vh;
+   
+    @include hajm(tab-port){
+        padding:20rem 0rem 30rem 0rem;
+    }
+
+
+    .text__nature-h3{
+        font-size:1.8rem;
+        font-weight:600;
+        text-transform:uppercase;
+
+        @include hajm(tab-port){
+            font-size:1.3rem;
+        }
+    }
+
+    .text__nature-p{
+        font-size:1.7rem;
+        font-weight:400;
+        margin-bottom:3rem;
+
+        @include hajm(tab-port){
+            font-size:1.4rem;
+            line-height:1.7;
+        }
+    }
+
+    .img-box{
+        position:relative;
+        
+    }
+
+
+    .section__1-img{
+        width:55%;
+        position:absolute;
+        box-shadow:0px 10px 20px rgba($color__black, .3);
+        outline-offset:1.5rem;
+        transition:all .2s;
+        border-radius:3px;
+        
+        @include hajm(tab-port){
+            width:40%;
+            box-shadow:0px 10px 20px rgba($color__black,.5);
+            outline-offset:1rem;
+        }
+
+
+        &:hover{
+            outline:1.6rem solid $color__button-2;
+            z-index:500;
+            box-shadow:0px 10px 20px rgba($color__black, .5);
+            transform:scale(1.05);
+
+            @include hajm(tab-port){
+                box-shadow:0px 10px 20px rgba($color__black,.5);
+                transform:scale(.9);
+            }
+
+        }
+
+        
+    }
+
+    .img-box:hover .section__1-img:not(:hover){
+        transform:scale(.95);
+
+        @include hajm(tab-port){
+        transform:scale(.85);
+        }
+    }
+
+    .nat-1{
+        top:-2rem;
+        left:0;
+        z-index:50;
+
+        
+    @include hajm(tab-port){
+        top:0rem;
+        left:-4%;
+    }
+    }
+
+    .nat-2{
+        top:4rem;
+        right:0;
+        z-index:100;
+
+        @include hajm(tab-port){
+            top:-1rem;
+            left:30.5%;
+            z-index:150;
+        }
+    }
+
+    .nat-3{
+        top:10rem;
+        left:22.5%;
+        z-index:150;
+
+        
+        @include hajm(tab-port){
+            top:0rem;
+            left:65%;
+            z-index:100;   
+        }
+    }
+
+
+}
+
+
+    // section-2
+.section-2{
+    padding:20rem 0rem;
+    background-image:linear-gradient(to right bottom,rgba($color__header-1,.8),rgba($color__header-2,.8)),url(../img/nat-4.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    margin-top:-10rem;
+    transform:skewY(-7deg);
+
+    @include hajm(tab-port){
+        padding:10rem 0;
+    }
+
+    .row{
+        transform:skewY(7deg);
+    }
+    
+    &-box{
+        border-radius:3px;
+        padding:2rem 1rem;
+        text-align:center;
+        background-color:rgba(#fff,.8);
+        z-index:100;
+        box-shadow:0px 10px 15px rgba($color__black, .1);
+        backface-visibility: hidden;
+        transition:all .4s;
+
+        &:hover{
+            transform:translateY(-1.8rem) scale(1.03);
+            box-shadow:0px 10px 15px rgba($color__black, .2);
+        }
+
+
+        &-i{
+           padding-top:1rem;
+           font-size:6rem;
+           background-image:linear-gradient(to right bottom,$color__header-1,$color__header-2);
+           -webkit-background-clip:text;
+           background-clip:text;
+           color:transparent;
+        }
+
+        &-h3{
+            font-size:1.7rem;
+            text-transform:uppercase;
+            margin-bottom:1.5rem;
+        }
+
+        &-p{
+            font-size:1.5rem;
+            padding-bottom:1rem;
+        }
+    }
+}
+
+
+   // section-3
+
+.section-3{
+    background:$section__color;
+    padding:25rem 0 13rem 0;
+    margin-top:-10rem;
+
+    @include hajm(tab-port){
+        padding:10rem 0 10rem 0;
+        margin-top:-2rem;
+    }
+
+
+
+    .box-3{
+        font-size:3rem;
+        color:white;
+        height:50rem;
+        position:relative;
+        perspective:150rem;
+        -webkit-perspective:150rem;
+        
+        @include hajm(tab-port){
+            height:65rem;
+        }
+
+        &-box{
+            box-shadow:0px 5px 10px rgba($color__black, .2);
+            backface-visibility:hidden;
+            position:absolute;
+            height:50rem;
+            width:100%;
+            transition:all .8s;    
+        }
+
+        &-front{
+            background:#fff;
+            
+
+            &-img{
+                width:100%;
+                height:23rem;
+                background-size: cover;
+                clip-path:polygon(0 0,100% 0,100% 85%,0% 100%);
+                -webkit-background-blend-mode:screen;
+                background-blend-mode:screen;
+
+                @include hajm(tab-port){
+                    height:19rem;
+                }
+
+                &-1{
+                  background-image:linear-gradient(to right bottom,$color__nat-5-l,$color__nat-5-d), url(../img/nat-5.jpg);
+                }
+
+                &-2{
+                  background-image:linear-gradient(to right bottom,$color__nat-6-l,$color__nat-6-d), url(../img/nat-6.jpg);
+                }
+
+                &-3{
+                  background-image:linear-gradient(to right bottom,$color__nat-7-l,$color__nat-7-d), url(../img/nat-7.jpg);
+                }
+            }
+
+
+
+            &-h4{
+                font-size:2.8rem;
+                font-weight:300;
+                position:absolute;
+                text-transform:uppercase;
+                width:75%;
+                top:12rem;
+                right:2rem;
+                text-align:right;
+
+                @include hajm(tab-port){
+                    width:100%;
+                    font-size:2rem;
+                }
+            }
+
+            &-span{
+                padding:1rem 1.5rem;
+                -webkit-box-decoration-break:clone;
+                box-decoration-break:clone;
+
+                &-1{
+                  background-image:linear-gradient(to right bottom,rgba($color__nat-5-l,.85),rgba($color__nat-5-d,.85));
+                }
+                &-2{
+                  background-image:linear-gradient(to right bottom,rgba($color__nat-6-l,.85),rgba($color__nat-6-d,.85));
+                }
+
+                &-3{
+                  background-image:linear-gradient(to right bottom,rgba($color__nat-7-l,.85),rgba($color__nat-7-d,.85));
+                }
+            }
+
+            .details{
+                padding:3rem;
+                text-align:center;
+                font-size:1.3rem;
+                
+                @include hajm(tab-port){
+                    padding:1rem 3rem;
+                }
+
+                &-ul{
+                    color:#777;
+                    list-style:none;
+                    padding:0 3rem;
+                    
+
+                    & > li{
+                        padding:1.2rem 0;
+                        
+                        &:not(:last-child){
+                            border-bottom:1px solid lighten(#000,90%);
+                        }
+
+                    }
+                }
+            }
+        }
+
+        &-back{
+            transform:rotateY(180deg);
+
+             
+            &-1{
+                background-image: linear-gradient(to right bottom,$color__nat-5-l,$color__nat-5-d);
+            }
+
+            &-2{
+                background-image: linear-gradient(to right bottom,$color__nat-6-l,$color__nat-6-d);
+            }
+
+            &-3{
+                background-image: linear-gradient(to right bottom,$color__nat-7-l,$color__nat-7-d);
+            }
+
+            .back-box{
+                position:absolute;
+                width:70%;
+                height:60%;
+                left:50%;
+                top:50%;
+                transform:translate(-50%,-50%);
+                text-align:center;
+            }
+
+            .back-h4{
+                text-transform:uppercase;
+                top:0;
+                margin-bottom:1rem;
+                font-size:1.7rem;
+            }
+
+            .back-p{
+                font-size:5rem;
+
+            }
+
+            .back-a{
+                color:#777;
+                background:#fff;
+                padding:1.5rem 4rem;
+                font-size:1.5rem;
+                text-transform:uppercase;
+                display:inline-block;
+                top:10rem;
+                
+
+                &::after{
+                    background:#fff;
+                }
+
+                @include hajm(tab-port){
+                    top:2rem !important;
+                }
+            }
+
+            @include hajm(tab-port){
+                transform:rotateY(0);
+                height:25rem;
+                bottom:0;
+                clip-path:polygon(0 15%,100% 0,100% 100%,0% 100%)
+            }
+        }
+
+    &:hover .box-3-front{
+        transform:rotateY(-180deg);
+
+        @include hajm(tab-port){
+            transform:rotateY(0);
+        }
+    }
+
+    
+    &:hover .box-3-back{
+        transform:rotateY(0deg);
+    }
+    }
+
+    .box-a{
+        position:relative;
+        width:100%;
+        margin-top:11rem;
+        text-align:center;
+
+        @include hajm(tab-port){
+            margin-top:4rem !important;
+        }
+    }
+
+    &-a{
+        background:$color__button-2;
+        color:#fff;
+        text-transform:uppercase;
+        font-size:1.5rem;
+        
+        &::after{
+            background:$color__button-2;
+        }
+    }
+}
+
+   // section-4
+.section-4{
+    position:relative;
+    padding:15rem 0;
+    width:100%;
+
+    @include hajm(tab-port){
+        padding:7.5rem 0;
+    }
+    
+
+
+    &-box{
+        border-radius:6px;
+        background:rgba(#fff,.6);
+        box-shadow:0px 2rem 2.5rem rgba($color__black,.1);
+        width:75%;
+        padding:6rem;
+        padding-left:9rem;
+        margin:0 auto;
+        transform:skewX(-12deg);
+        @include tozala;
+        margin-bottom:6rem;
+        
+        @include hajm(tab-port){
+            width:110%;
+            padding:6rem;
+        }
+
+        @include hajm(phone){
+            transform:skewX(0);
+            padding:4rem;
+        }
+    }   
+
+    .figure_a{
+        position:relative;
+        transform:skewX(12deg) translateX(-3rem);
+        width:15rem;
+        height:15rem;
+        float:left;
+        shape-outside:circle(50% at 50% 50%);
+        -webkit-shape-outside:circle(50% at 50% 50%);
+        clip-path:circle(50% at 50% 50%);
+        -webkit-clip-path:circle(50% at 50% 50%);
+
+        @include hajm(tab-port){
+            width:13rem;
+            height:13rem;
+            
+        }
+
+        
+        @include hajm(phone){
+            transform:skewX(0);
+        }
+    }
+    
+
+    .figure-img{
+        transform:translateX(-4rem) scale(1.3);
+        height:100%;
+        backface-visibility: hidden;
+        transition:all .2s;
+
+}
+
+    .figure-in-text{
+        position:absolute;
+        color:#fff;
+        left:50%;
+        top:50%;
+        transform:translate(-50% , -0%);
+        font-size:1.8rem;
+        text-transform:uppercase;
+        text-align:center;
+        display:inline-block;
+        line-height:1.4;
+        backface-visibility: hidden;
+        opacity:0;
+        transition:all .4s;
+
+        @include hajm(tab-port){
+            font-size:1.6rem;
+        }
+    }
+
+    
+    .figure-text{
+        font-size:1.6rem;
+        transform:skewX(12deg);
+
+        @include hajm(tab-port){
+            font-size:1.4rem;
+            line-height:1.6;
+        }
+
+        
+        @include hajm(phone){
+            transform:skewX(0) translateX(2rem);
+
+        }
+    }
+
+    .figure-h3{
+        text-transform:uppercase;
+        margin-bottom:1rem;
+
+        @include hajm(tab-port){
+            font-size:1.4rem;
+            
+        }
+    }
+
+
+
+.section-4-box:hover .figure-in-text{
+    transform:translate(-50%,-50%);
+    opacity:1;
+}
+.section-4-box:hover .figure-img{
+    transform:scale(1) translateX(-4rem);
+    filter:blur(5px) brightness(80%);
+}
+}
+
+.section-5{
+    padding:10rem 0rem;
+    width:100%;
+    background:linear-gradient(to right bottom,$color__header-1,$color__header-2);
+    
+    @include hajm(tab-port){
+        padding:5rem 0;
+    }
+}

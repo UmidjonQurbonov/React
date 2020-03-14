@@ -1,0 +1,43 @@
+.s2__container {
+    width: 100%;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba($header__back, .9), rgba($header__back, .9)), url(../img/1217.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.s2 {
+    &__box {
+        text-align: center;
+        width: 63%;
+        position: absolute;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        color: white;
+        @include hajm(min-planshed) {
+            width: 80%;
+        }
+        @include hajm(phone) {
+            width: 90%;
+        }
+    }
+    &__h1 {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding-bottom: 3rem;
+    }
+    &__p {
+        font-size: 2rem;
+        line-height: 1.7;
+        font-weight: 500;
+    }
+    &__p-2 {
+        text-align: right;
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+}

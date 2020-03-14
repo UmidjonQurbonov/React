@@ -1,0 +1,64 @@
+.button-1,.button-1:link,.button-1:visited{
+    text-decoration:none;
+    display:inline-block;
+    position:relative;
+    border-radius:10rem;
+    transition:all .2s;
+    
+
+    &::after{
+        content:"";
+        border-radius:10rem;
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        opacity:1;
+        transition:all .4s;
+        z-index:-1;
+        
+    }
+
+    &:hover{
+        transform:translateY(-2px);
+        box-shadow:0px 3px 15px rgb(100, 99, 99);
+
+    &::after{
+        transform:scale(1.4,1.6);
+        opacity:0;
+    }
+}
+    &:active{
+        transform:translateY(-1.5px);
+        box-shadow:0px 1px 10px rgb(100, 99, 99);
+
+        
+    &::after{
+        transform:scale(1.4,1.6);
+        opacity:0;
+    }
+    }
+}
+
+
+.button-2,.button-2:link,.button-2:visited{
+    text-decoration:none;
+    display:inline-block;
+    font-size:1.8rem;
+    color:$color__button-2;
+    padding:.2rem;
+    font-weight:520;
+    border-bottom:1px solid $color__button-2;
+    transition:all .2s;
+
+    @include hajm(tab-port){
+        font-size:1.6rem;
+    }
+}
+
+.button-2:hover{
+    color:#fff;
+    transform:translateY(-2px) scale(1.01);
+    background:$color__button-2;
+}

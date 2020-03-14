@@ -1,0 +1,21 @@
+.slide {
+    display: flex;
+    position: fixed;
+    flex-direction: row-reverse;
+    z-index: 1000;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .4s;
+    &__img {
+        width: 5rem;
+    }
+    &__ul {
+        margin-right: 1rem;
+    }
+    &__a {
+        text-decoration: none;
+        display: inline-block;
+        height: 5rem;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,92 @@
+.header{
+    position:relative;
+    width:100%;
+    height:95vh;
+    background-image:linear-gradient(to right bottom,rgba($color__header-1,.725),rgba($color__header-2,.725)),url(../img/hero-small.jpg);
+    background-size:cover;
+    background-position:top;
+    background-repeat:no-repeat;
+    clip-path:polygon(0 0,100% 0,100% 75vh,0 100%);
+
+    @include hajm(tab-port){
+    clip-path:polygon(0 0,100% 0,100% 85vh,0 100%);
+    }
+
+    &__img{
+        display:inline-block;
+        position:absolute;
+        top:4rem;
+        left:4rem;
+
+        @include hajm(tab-port){
+            top:3rem;
+            left:3rem;
+        }
+
+        &-logo{
+            height:3.5rem;
+
+            @include hajm(tab-port){
+                height:3rem;
+            }
+        }
+    }
+
+    &__text-box{
+        text-align:center;
+        position:absolute;
+        left:50%;
+        top:40%;
+        transform:translate(-50%,-50%);
+    }
+
+    &__h1{
+        text-align:center;
+        margin-bottom:6rem;
+        line-height:1.8;
+    }
+
+    &__left{
+        animation:left__anim 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+        color:#fff;
+        display:block;
+        font-size:6rem;
+        font-weight:500;
+        text-transform:uppercase;
+        letter-spacing:3.2rem;
+        @include header__anim;
+
+        @include hajm(tab-port){
+         font-size:5.5rem;
+         letter-spacing:2.3rem;   
+        }
+
+        @include hajm(phone){
+            font-size:5rem;
+            letter-spacing: 1.5rem;
+        }
+        
+    }
+
+    &__right{
+        animation:right__anim 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+        color:#fff;
+        display:block;
+        font-size:2rem;
+        text-transform:uppercase;
+        letter-spacing:1.6rem;
+        @include header__anim2;
+
+        @include hajm(tab-port){
+         font-size:1.8rem;
+         letter-spacing:1.2rem;   
+        }
+
+        @include hajm(phone){
+            font-size:1.6rem;
+             letter-spacing:.5rem;
+        }
+    }
+
+
+}

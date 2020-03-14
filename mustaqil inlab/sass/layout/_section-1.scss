@@ -1,0 +1,57 @@
+.section-1 {
+    padding: 4rem 0;
+}
+
+.s1 {
+    &__box {
+        padding: 0 10rem;
+        width: 100%;
+        @include hajm(min-planshed) {
+            padding: 0 5rem;
+        }
+        @include hajm(phone) {
+            padding: 0 2rem;
+        }
+    }
+    &__h1 {
+        font-size: 2rem;
+        margin: 6rem 0;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2.5rem;
+        color: rgba(black, .8);
+        @include hajm(min-planshed) {
+            font-size: 2.5rem;
+        }
+    }
+    &__h2 {
+        color: rgba(black, .8);
+        margin-bottom: 1.5rem;
+        @include hajm(min-planshed) {
+            font-size: 2.3rem;
+        }
+    }
+    &__a {
+        text-align: center;
+        text-decoration: none;
+    }
+    &__p {
+        color: black;
+        @include hajm(planshed) {
+            font-size: 2.1rem;
+        }
+    }
+    &__img {
+        width: 12rem;
+        margin: 0rem auto;
+        &-1 {
+            width: 10rem;
+        }
+        &-2 {
+            width: 18rem;
+        }
+        &-3 {
+            width: 16rem;
+        }
+    }
+}
